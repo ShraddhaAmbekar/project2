@@ -1,0 +1,10 @@
+<p>parent works!</p>
+<input type="text" [value]="name">enter name
+<input type="text" [(ngModel)]="city">enter city<br>
+<!-- to work ngModel import FormModule in imports section of app.Module -->
+{{state}}
+
+<br>
+-----------------------------------------
+<!-- parent-child -->
+<app-child [cityName]="city" (data)="dataFromChild($event)"></app-child>
