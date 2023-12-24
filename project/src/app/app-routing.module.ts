@@ -7,6 +7,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import { DataTransmissionComponent } from './data-transmission/data-transmission.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { SubComponent } from './sub/sub.component';
+import { Sub1Component } from './sub1/sub1.component';
+import { Sub2Component } from './sub2/sub2.component';
 
 const routes: Routes = [
   {path : '' , component : HomeComponent},
@@ -15,7 +18,11 @@ const routes: Routes = [
   {path : "projects", component : ProjectsComponent},
   {path : "data-transmission", component : DataTransmissionComponent},
   {path : "parent", component : ParentComponent},
-  {path : "child", component : ChildComponent}
+  {path : "child", component : ChildComponent},
+  {path:"subject", component : SubComponent},
+  {path:"subject1", component : Sub1Component},
+  {path:"subject2", component : Sub2Component}
+  
 ];
 
 @NgModule({

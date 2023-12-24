@@ -11,6 +11,9 @@ import { DataTransmissionComponent } from './data-transmission/data-transmission
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { FormsModule } from '@angular/forms';
+import { Sub1Component } from './sub1/sub1.component';
+import { Sub2Component } from './sub2/sub2.component';
+import { SubComponent } from './sub/sub.component';
 
 
 @NgModule({
@@ -23,6 +26,9 @@ import { FormsModule } from '@angular/forms';
     DataTransmissionComponent,
     ParentComponent,
     ChildComponent,
+    Sub1Component,
+    Sub2Component,
+    SubComponent,
    
   ],
   imports: [
