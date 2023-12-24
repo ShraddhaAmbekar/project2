@@ -1,0 +1,59 @@
+<button (click)="showPractice()">Practice</button>
+<div *ngIf="show">
+  <p>directives works!</p>
+
+  <h1>{{title}}</h1>
+  <div *ngIf="isShow">
+    <h2>{{city}}</h2>
+  </div><br>
+  <div>
+    <h3>{{cars}}</h3>
+    <h3 *ngFor="let carName of cars">{{carName}}</h3>
+  </div>
+  <div style="height: 150px;width: 150px;background-color:blueviolet" *ngIf="showDiv">1</div>
+  <button (click)="toggle()">toggle</button>
+
+  <div [ngSwitch]="fruit">
+    <p *ngSwitchCase="'mango'">My fav fruit is mango</p>
+    <p *ngSwitchCase="'papaya'">My fav fruit is papaya</p>
+    <p *ngSwitchCase="'apple'">My fav fruit is apple</p>
+  </div>
+
+  <div [ngClass]="{
+      'adminClass':user == 'Admin',
+      'mentorClass': user == 'Mentor',
+      'studentClass':user=='Student',
+    }">
+    welcome Welcome welcome
+  </div>
+  <br>
+  <div style="color:blueviolet;">
+    Welcome
+  </div>
+  <br>
+  <div [ngStyle]="user == 'Admin' ?{'background-color':'yellow'}:{'background-color':'black','color':'white'}">
+    Welcome
+
+  </div>
+</div>
+<div class="table-container">
+  <h1>Table</h1>
+
+  <div>
+    <table>
+      <tr>
+        <th *ngFor="let headings of 
+          tableHeadings">{{headings}}</th>
+      </tr>
+      <tr *ngFor="let data of tableData">
+        <td>{{data.name}}</td>
+        <td>{{data.age}}</td>
+        <td>{{data.contact}}</td>
+        <td>{{data.city}}</td>
+        <td>{{data.country}}</td>
+      </tr>
+    </table>
+
+  </div>
+
+</div>

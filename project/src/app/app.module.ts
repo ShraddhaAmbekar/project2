@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { Sub1Component } from './sub1/sub1.component';
 import { Sub2Component } from './sub2/sub2.component';
 import { SubComponent } from './sub/sub.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { SubComponent } from './sub/sub.component';
     Sub1Component,
     Sub2Component,
     SubComponent,
+    DirectivesComponent,
    
   ],
   imports: [
