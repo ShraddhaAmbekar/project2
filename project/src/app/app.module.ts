@@ -19,6 +19,7 @@ import { PipesComponent } from './pipes/pipes.component';
 
 import { CostomSearchPipe } from './costom-search.pipe';
 import { TableComponent } from './table/table.component';
+import { LoginformComponent } from './loginform/loginform.component';
 
 
 
@@ -41,6 +42,7 @@ import { TableComponent } from './table/table.component';
     PipesComponent,
     CostomSearchPipe,
     TableComponent,
+    LoginformComponent,
   ],
   imports: [
     BrowserModule,

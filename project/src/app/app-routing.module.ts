@@ -13,6 +13,7 @@ import { Sub2Component } from './sub2/sub2.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { TableComponent } from './table/table.component';
+import { LoginformComponent } from './loginform/loginform.component';
 
 
 const routes: Routes = [
@@ -28,7 +29,8 @@ const routes: Routes = [
   {path:"subject2", component : Sub2Component},
   {path:"directives", component : DirectivesComponent},
   {path:"pipes",component : PipesComponent},
-  {path:"table",component : TableComponent}
+  {path:"table",component : TableComponent},
+  {path:"loginform",component : LoginformComponent}
 ];
 
 @NgModule({
