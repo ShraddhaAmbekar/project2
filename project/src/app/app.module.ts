@@ -15,6 +15,8 @@ import { Sub1Component } from './sub1/sub1.component';
 import { Sub2Component } from './sub2/sub2.component';
 import { SubComponent } from './sub/sub.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { CustomSearchPipe } from './custom-search.pipe';
 
 
 
@@ -34,6 +36,8 @@ import { DirectivesComponent } from './directives/directives.component';
     Sub2Component,
     SubComponent,
     DirectivesComponent,
+    PipesComponent,
+    CustomSearchPipe,
    
   ],
   imports: [

@@ -11,6 +11,7 @@ import { SubComponent } from './sub/sub.component';
 import { Sub1Component } from './sub1/sub1.component';
 import { Sub2Component } from './sub2/sub2.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 
 const routes: Routes = [
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path:"subject1", component : Sub1Component},
   {path:"subject2", component : Sub2Component},
   {path:"directives", component : DirectivesComponent},
+  {path:"pipes",component : PipesComponent}
 
 ];
 
