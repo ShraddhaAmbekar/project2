@@ -16,7 +16,9 @@ import { Sub2Component } from './sub2/sub2.component';
 import { SubComponent } from './sub/sub.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
-import { CustomSearchPipe } from './custom-search.pipe';
+
+import { CostomSearchPipe } from './costom-search.pipe';
+import { TableComponent } from './table/table.component';
 
 
 
@@ -37,8 +39,8 @@ import { CustomSearchPipe } from './custom-search.pipe';
     SubComponent,
     DirectivesComponent,
     PipesComponent,
-    CustomSearchPipe,
-   
+    CostomSearchPipe,
+    TableComponent,
   ],
   imports: [
     BrowserModule,

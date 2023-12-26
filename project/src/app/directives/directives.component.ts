@@ -16,6 +16,8 @@ export class DirectivesComponent {
   show:boolean=false;
   showtbl:boolean=false
 
+  searchText:any=""
+
 
 
   toggle(){

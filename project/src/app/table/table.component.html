@@ -1,0 +1,21 @@
+<p>table works!</p>
+<button (click)="showTable()">table</button>
+<div class="table-container" *ngIf=showtbl>
+    <h1>Table</h1>
+  <div><br>
+  <input type="search" [(ngModel)]="searchText"><br><br>
+  <table>
+    <tr>
+      <th *ngFor="let headings of 
+        tableHeadings">{{headings|uppercase}}</th>
+    </tr>
+    <tr *ngFor="let data of tableData | costomSearch : searchText">
+      <td>{{data.name|titlecase}}</td>
+      <td>{{data.age}}</td>
+      <td>{{data.contact}}</td>
+      <td>{{data.city|titlecase}}</td>
+      <td>{{data.country|titlecase}}</td>
+    </tr>
+  </table>
+</div>
+</div>
