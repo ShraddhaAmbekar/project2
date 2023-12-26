@@ -13,7 +13,8 @@ export class DirectivesComponent {
   showDiv=true
   fruit:any="apple"
   user:string="Admin";
-  show:boolean=false
+  show:boolean=false;
+  showtbl:boolean=false
 
 
 
@@ -25,6 +26,11 @@ export class DirectivesComponent {
     this.show = !this.show
     console.log('show practice');
   }
+  showTable(){
+    this.showtbl = !this.showtbl
+    console.log('show table');
+    
+  }
 
     tableHeadings=['Name','Age','Contact','City', 'Country']
 
@@ -34,6 +40,8 @@ export class DirectivesComponent {
       {name:'anjelina',age:27, contact:54554529, city:'london', country:'england'},
       {name:'armana',age:50, contact:64968, city:'london', country:'england'}]
 
+
+ 
 }
 
 

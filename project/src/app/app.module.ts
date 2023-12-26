@@ -17,6 +17,9 @@ import { SubComponent } from './sub/sub.component';
 import { DirectivesComponent } from './directives/directives.component';
 
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,

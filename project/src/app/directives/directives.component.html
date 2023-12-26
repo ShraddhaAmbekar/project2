@@ -1,7 +1,6 @@
 <button (click)="showPractice()">Practice</button>
+<button (click)="showTable()">table</button>
 <div *ngIf="show">
-  <p>directives works!</p>
-
   <h1>{{title}}</h1>
   <div *ngIf="isShow">
     <h2>{{city}}</h2>
@@ -36,7 +35,8 @@
 
   </div>
 </div>
-<div class="table-container">
+
+<div class="table-container" *ngIf=showtbl>
   <h1>Table</h1>
 
   <div>
@@ -53,7 +53,6 @@
         <td>{{data.country}}</td>
       </tr>
     </table>
-
   </div>
 
 </div>
