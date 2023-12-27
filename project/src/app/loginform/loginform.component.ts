@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class LoginformComponent {
 submit(form:any){
   console.log("form obj", form);
-  
 }
+
 }

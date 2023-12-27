@@ -10,7 +10,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { DataTransmissionComponent } from './data-transmission/data-transmission.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Sub1Component } from './sub1/sub1.component';
 import { Sub2Component } from './sub2/sub2.component';
 import { SubComponent } from './sub/sub.component';
@@ -20,6 +20,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { CostomSearchPipe } from './costom-search.pipe';
 import { TableComponent } from './table/table.component';
 import { LoginformComponent } from './loginform/loginform.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 
 
@@ -43,11 +44,13 @@ import { LoginformComponent } from './loginform/loginform.component';
     CostomSearchPipe,
     TableComponent,
     LoginformComponent,
+    ReactiveformComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule //import for two way databinding
+    FormsModule, 
+    ReactiveFormsModule//import for two way databinding
   ],
   providers: [],
   bootstrap: [AppComponent]

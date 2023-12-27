@@ -14,6 +14,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { TableComponent } from './table/table.component';
 import { LoginformComponent } from './loginform/loginform.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 
 const routes: Routes = [
@@ -30,7 +31,8 @@ const routes: Routes = [
   {path:"directives", component : DirectivesComponent},
   {path:"pipes",component : PipesComponent},
   {path:"table",component : TableComponent},
-  {path:"loginform",component : LoginformComponent}
+  {path:"loginform",component : LoginformComponent},
+  {path:"reactiveform", component:ReactiveformComponent}
 ];
 
 @NgModule({
