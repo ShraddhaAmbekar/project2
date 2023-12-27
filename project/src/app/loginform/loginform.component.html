@@ -1,16 +1,16 @@
 <div>
-  <form>
+  <form class="form-container" #loginForm="ngForm">
    <!-- templatedriven form -->
     <h1>Login</h1><br>
     <div>
       <p>login Your account</p><br>
-      <input type="text" placeholder="username"><br><br>
-      <input type="password" placeholder="password"><br><br>
+      <input type="text" placeholder="username" ngModel name="username" ><br><br>
+      <input type="password" placeholder="password" ngModel name="pass"><br><br>
     </div>
     <div>
       Not an account? Create Account
-    </div>
-      <button class="login-button">Login</button>
+    </div><br><br>
+      <button (click)="submit(loginForm.value)" class="login-button">Login</button><br>
 
     </form>
 

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./loginform.component.css']
 })
 export class LoginformComponent {
-
+submit(form:any){
+  console.log("form obj", form);
+  
+}
 }
