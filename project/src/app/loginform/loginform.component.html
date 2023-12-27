@@ -4,13 +4,19 @@
     <h1>Login</h1><br>
     <div>
       <p>login Your account</p><br>
-      <input type="text" placeholder="username" ngModel name="username" ><br><br>
-      <input type="password" placeholder="password" ngModel name="pass"><br><br>
+      <input type="text" placeholder="username*" ngModel #userName="ngModel" name="userName" required autocomplete="off"><br>
+      <span *ngIf="userName?.errors?.['required'] && userName.touched "class="error">Username is required</span><br><br>
+      
+
+      <input type="password" placeholder="password*" ngModel #password="ngModel" name="pass" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,12}$"><br>
+      <span *ngIf="password.errors?.['required'] && password.touched " class="error">Password is required</span>
+      <span *ngIf="password.errors?.['pattern']" class="error">Pattern not match</span>
     </div>
-    <div>
-      Not an account? Create Account
-    </div><br><br>
-      <button (click)="submit(loginForm.value)" class="login-button">Login</button><br>
+    
+      <button (click)="submit(loginForm.value)" class="login-button" [disabled]="!loginForm.valid">Login</button><br>
+      <div>
+        Not an account? Create Account.
+      </div>
 
     </form>
 
