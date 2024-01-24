@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { DataService } from '../data.service';
-import { Route } from '@angular/router';
+import { DataService } from '../shared/data.service';
+
 
 @Component({
   selector: 'app-home',
@@ -14,7 +14,7 @@ age :number= 49;
 contact:number=9876564879
 
 
-constructor(private dataService : DataService, ){}
+constructor(public dataService : DataService, ){}
 
 ngOnInit(){
 this.dataService.userName = this.name;

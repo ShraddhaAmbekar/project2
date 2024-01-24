@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { DataService } from '../shared/data.service';
+import { ApiService } from '../shared/api.service';
+
 
 @Component({
   selector: 'app-reactiveform',
@@ -7,8 +10,39 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./reactiveform.component.css']
 })
 export class ReactiveformComponent {
-signUpForm! : FormGroup
+reactiveForm! : FormGroup
 
-constructor(){};
-ngOnInit(){}
+constructor(private formBuilder : FormBuilder, private dataService:DataService, private apiService:ApiService){};
+
+ngOnInit(){
+ this.formLoad();
+};
+
+formLoad(){
+  this.reactiveForm = this.formBuilder.group({
+    name : ['', [Validators.required]],
+    mob : [],
+    email : [''],
+    pan : [''],
+    pass : [''],
+    confirmPass : ['']
+
+  })
+};
+
+// submit(){
+//   let endpoint='user'
+//   console.log(this.reactiveForm.value);
+//   this.dataService.postApiCall(endpoint,this.reactiveForm.value).subscribe(result=>(console.log(result)))
+
+// }
+// submit(){
+//   let endpoint='admin';
+//   this.dataService.postApiCall(endpoint,this.reactiveForm.value).subscribe(ref=>(console.log()))
+// }
+submit(){
+  let endpoint='owner';
+  this.apiService.postApiCall(endpoint,this.reactiveForm.value).subscribe(res=>(console.log(res)))
+
+}
 }

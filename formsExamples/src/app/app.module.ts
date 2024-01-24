@@ -1,0 +1,55 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { Form1Component } from './form1/form1.component';
+import { Form2Component } from './form2/form2.component';
+import { Form3Component } from './form3/form3.component';
+import { Form4Component } from './form4/form4.component';
+import { Form5Component } from './form5/form5.component';
+import { Form6Component } from './form6/form6.component';
+import { Form7Component } from './form7/form7.component';
+import { Form8Component } from './form8/form8.component';
+import { Form9Component } from './form9/form9.component';
+import { Form10Component } from './form10/form10.component';
+import { Form11Component } from './form11/form11.component';
+import { Form12Component } from './form12/form12.component';
+import { Form13Component } from './form13/form13.component';
+import { Form14Component } from './form14/form14.component';
+import { Form15Component } from './form15/form15.component';
+import { Form16Component } from './form16/form16.component';
+import { StudentReactiveFormComponent } from './student-reactive-form/student-reactive-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    Form1Component,
+    Form2Component,
+    Form3Component,
+    Form4Component,
+    Form5Component,
+    Form6Component,
+    Form7Component,
+    Form8Component,
+    Form9Component,
+    Form10Component,
+    Form11Component,
+    Form12Component,
+    Form13Component,
+    Form14Component,
+    Form15Component,
+    Form16Component,
+    StudentReactiveFormComponent,
+  
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

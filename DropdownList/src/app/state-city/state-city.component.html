@@ -1,0 +1,24 @@
+<p>state-city works!</p>
+<form [formGroup]=" dropdownForm">
+  <div>
+    <label>Continents</label>
+    <select formControlName="continent">
+      <option selected></option>
+      <option *ngFor="let continent of list" [ngValue]='continent.id'>{{continent.label}}</option>
+      <!-- when you are use only value you get string value and when you use ngValue you get your required type value -->
+    </select>
+  </div>
+
+  <div>
+    <label>Contries</label>
+    <select formControlName="country">
+      <option selected></option>
+      <option *ngFor="let Country of selectedContriesList" [value]='Country.id'>{{Country.label}}</option>
+    </select>
+  </div>
+
+  <div>
+    <button (click)="submit()">Submit</button>
+  </div>
+<br><br>
+</form>

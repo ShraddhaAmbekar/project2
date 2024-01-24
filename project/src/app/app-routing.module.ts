@@ -15,6 +15,8 @@ import { PipesComponent } from './pipes/pipes.component';
 import { TableComponent } from './table/table.component';
 import { LoginformComponent } from './loginform/loginform.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+import { Loginform2Component } from './loginform2/loginform2.component';
+import { PopupComponent } from './popup/popup.component';
 
 
 const routes: Routes = [
@@ -32,7 +34,9 @@ const routes: Routes = [
   {path:"pipes",component : PipesComponent},
   {path:"table",component : TableComponent},
   {path:"loginform",component : LoginformComponent},
-  {path:"reactiveform", component:ReactiveformComponent}
+  {path:"reactiveForm", component:ReactiveformComponent},
+  {path:"loginform2",component : Loginform2Component},
+  {path:"popup",component:PopupComponent}
 ];
 
 @NgModule({

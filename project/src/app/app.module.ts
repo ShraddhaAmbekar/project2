@@ -21,7 +21,9 @@ import { CostomSearchPipe } from './costom-search.pipe';
 import { TableComponent } from './table/table.component';
 import { LoginformComponent } from './loginform/loginform.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
-
+import { Loginform2Component } from './loginform2/loginform2.component';
+import {HttpClientModule } from '@angular/common/http';
+import { PopupComponent } from './popup/popup.component'
 
 
 
@@ -45,12 +47,15 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
     TableComponent,
     LoginformComponent,
     ReactiveformComponent,
+    Loginform2Component,
+    PopupComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, 
-    ReactiveFormsModule//import for two way databinding
+    FormsModule, //import for two way databinding
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

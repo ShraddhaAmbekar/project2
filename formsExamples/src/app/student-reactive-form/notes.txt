@@ -1,0 +1,16 @@
+steps
+
+1. generate full name.  (make function use ngOnInit in that use this.signupForm.control[].value and subscribe and in subscribe call function, use setvalue in function and )
+
+2. on dob select calculate age.
+
+3. age is greater thatn 18 ask Licence No and show textbox to enter& Lincence textbox will be mendetory.
+
+4.If country india is selectced then only state will be mendetory and identity section will be visible.
+
+5.On identity section if pan card selected pattern will be dynamic.
+
+required module
+Reactive form module
+
+import in ts file formbuilder formControl formGroup validator
