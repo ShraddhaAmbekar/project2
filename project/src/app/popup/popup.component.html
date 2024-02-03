@@ -1,34 +1,33 @@
 <div class="open">
-<div class="overley" *ngIf="dataService.showDialog">
-  <div class="container">
-    <button class="close" (click)="dataService.showDialog=false">x</button>
-  <div class="popup">
-    <div class="card m-3 Larger shadow" routerLink="">
-      <div class="card-body text-center">
-        <!-- <h4 class="card-title text-center">Admin</h4> -->
-        <img src="/assets/img/administrator.png" alt="" ><br>
-        <p class="signin" >Admin</p>
+  <div class="overley" *ngIf="dataService.showDialog">
+    <div class="container">
+      <button class="close" (click)="dataService.showDialog=false">x</button>
+      <div class="popup">
+        <div class="card m-3 Larger shadow" routerLink="">
+          <div class="card-body text-center">
+            <!-- <h4 class="card-title text-center">Admin</h4> -->
+            <img src="/assets/img/administrator.png" alt=""><br>
+            <p class="signin">Admin</p>
+          </div>
+        </div>
+        <div class="card m-3 Larger shadow" routerLink="">
+          <div class="card-body text-center">
+            <!-- <h4 class="card-title text-center">Admin</h4> -->
+            <img src="/assets/img/customer-service.png" alt=""><br>
+            <p class="signin">Owner</p>
+          </div>
+        </div>
+        <div class="card m-3 Larger shadow" routerLink="">
+          <div class="card-body text-center">
+            <!-- <h4 class="card-title text-center">Admin</h4> -->
+            <img src='/assets/img/usericon.png' alt=""><br>
+            <p class="signin">User</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="card m-3 Larger shadow" routerLink="">
-      <div class="card-body text-center">
-        <!-- <h4 class="card-title text-center">Admin</h4> -->
-        <img src="/assets/img/customer-service.png" alt="" ><br>
-        <p class="signin">Owner</p>
-      </div>
-    </div>
-    <div class="card m-3 Larger shadow" routerLink="">
-      <div class="card-body text-center">
-        <!-- <h4 class="card-title text-center">Admin</h4> -->
-        <img src='/assets/img/usericon.png' alt="" ><br>
-        <p class="signin">User</p>
-      </div>
+
+
+
     </div>
   </div>
-
- 
-    
 </div>
-    </div>
-  </div>
-

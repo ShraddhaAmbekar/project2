@@ -7,67 +7,68 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./state-city.component.scss']
 })
 export class StateCityComponent {
-  dropdownForm!:FormGroup
+  dropdownForm!: FormGroup
 
-  list=[
+  list = [
     {
-      id:1,
-      label:'Asia',
-      countries:[
+      id: 1,
+      label: 'Asia',
+      countries: [
         {
-          id:101,
-          label:'India'
+          id: 101,
+          label: 'India'
         },
         {
-          id:102,
-          label:'Iran'
-        },  
+          id: 102,
+          label: 'Iran'
+        },
       ]
     },
     {
-      id:2,
-      label:'Europe',
-      countries:[
+      id: 2,
+      label: 'Europe',
+      countries: [
         {
-          id:201,
-          label:'France'
+          id: 201,
+          label: 'France'
         },
         {
-          id:202,
-          label:'Germony'
-        },  
+          id: 202,
+          label: 'Germony'
+        },
       ]
     }
   ]
-  ngOnInit(){
+  ngOnInit() {
     this.functionCalling()
 
   }
 
-selectedContriesList:any[]=[]
-submit(){
-  console.log(this.dropdownForm.value)
-}
+  selectedContriesList: any[] = []
+   submit(){
+    console.log(this.dropdownForm.value)
+ }
 
 
 
-functionCalling(){
-  this.dropdownForm =new FormGroup({
-    continent:new FormControl(null),
-    country:new FormControl({value:null, disabled:true})
-  });
+  functionCalling() {
+    this.dropdownForm = new FormGroup({
+      continent: new FormControl(null),
+      country: new FormControl({ value: null, disabled: true })
+    });
 
-  this.dropdownForm.get('continent')?.valueChanges.subscribe((res:number)=>{
-    console.log(res);
-    this.dropdownForm.get('country')?.setValue(null);
+    this.dropdownForm.get('continent')?.valueChanges.subscribe((res: number) => {
+      console.log(res);
+      this.dropdownForm.get('country')?.setValue(null);
 
-    if(res){
-    this.selectedContriesList = this.list.filter((obj:any)=>obj.id ===res)[0].countries;
-    this.dropdownForm.get('country')?.enable()}
-    else {
-      this.dropdownForm.get('country')?.disable()
+      if (res) {
+        this.selectedContriesList = this.list.filter((obj: any) => obj.id === res)[0].countries;
+        this.dropdownForm.get('country')?.enable()
+      }
+      else {
+        this.dropdownForm.get('country')?.disable()
+      }
     }
+    )
   }
-)
-}
 }

@@ -23,7 +23,11 @@ import { LoginformComponent } from './loginform/loginform.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { Loginform2Component } from './loginform2/loginform2.component';
 import {HttpClientModule } from '@angular/common/http';
-import { PopupComponent } from './popup/popup.component'
+import { PopupComponent } from './popup/popup.component';
+import { CardkComponent } from './cardk/cardk.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { HotelBookingComponent } from './hotel-booking/hotel-booking.component';
+import { HotelempComponent } from './hotelemp/hotelemp.component'
 
 
 
@@ -49,6 +53,10 @@ import { PopupComponent } from './popup/popup.component'
     ReactiveformComponent,
     Loginform2Component,
     PopupComponent,
+    CardkComponent,
+    EmployeeComponent,
+    HotelBookingComponent,
+    HotelempComponent,
   ],
   imports: [
     BrowserModule,

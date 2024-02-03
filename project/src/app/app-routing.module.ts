@@ -17,6 +17,8 @@ import { LoginformComponent } from './loginform/loginform.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { Loginform2Component } from './loginform2/loginform2.component';
 import { PopupComponent } from './popup/popup.component';
+import { CardkComponent } from './cardk/cardk.component';
+import { HotelBookingComponent } from './hotel-booking/hotel-booking.component';
 
 
 const routes: Routes = [
@@ -36,7 +38,9 @@ const routes: Routes = [
   {path:"loginform",component : LoginformComponent},
   {path:"reactiveForm", component:ReactiveformComponent},
   {path:"loginform2",component : Loginform2Component},
-  {path:"popup",component:PopupComponent}
+  {path:"popup",component:PopupComponent},
+  {path:"card",component:CardkComponent},
+  {path:"hotelcard",component:HotelBookingComponent}
 ];
 
 @NgModule({

@@ -25,8 +25,8 @@ formLoad(){
     email : [''],
     pan : [''],
     pass : [''],
-    confirmPass : ['']
-
+    confirmPass : [''],
+    image:[]
   })
 };
 
@@ -43,6 +43,5 @@ formLoad(){
 submit(){
   let endpoint='owner';
   this.apiService.postApiCall(endpoint,this.reactiveForm.value).subscribe(res=>(console.log(res)))
-
 }
 }

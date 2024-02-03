@@ -148,5 +148,18 @@
       "pass": "dsfg",
       "confirmPass": "dsfg"
     }
+  ],
+  "posts": [
+    {
+      "id": "e254",
+      "firstname": "shraddha",
+      "lastname": "Ambekar",
+      "birthdate": "",
+      "gender": "",
+      "company": "sdfasd",
+      "jobExperience": 2,
+      "salary": 6564,
+      "profile": "shraddhaimg.jpg"
+    }
   ]
 }
